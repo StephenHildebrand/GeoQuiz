@@ -69,13 +69,31 @@ public class QuizActivity extends AppCompatActivity {
         updateQuestion();
     }
 
-    /** Update the current Question in the TextView to the Question at current index. */
+    /**
+     * Update the current Question in the TextView to the Question at current index.
+     */
     private void updateQuestion() {
         int question = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(question);
     }
 
-
+    /**
+     * Accepts a boolean variable that identifies whether the user pressed the True or False
+     * button. Then, it will check the user's answer against teh answer in the current Question
+     * object. Finally, after determining whether the user answered correctly, it will make a
+     * Toast that displays the appropriate message to the user.
+     * @param userPressedTrue   True if user presses the True button, False if presses False button.
+     */
+    private void checkAnswer(boolean userPressedTrue) {
+        boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
+        int messageResId = 0;
+        if (userPressedTrue == answerIsTrue) {
+            messageResId = R.string.correct_toast;
+        } else {
+            messageResId = R.string.incorrect_toast;
+        }
+        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
+    }
 
 
     @Override
