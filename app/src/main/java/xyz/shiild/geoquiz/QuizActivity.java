@@ -18,7 +18,7 @@ public class QuizActivity extends AppCompatActivity {
     private Button mNextButton;
     /** The Question text view. */
     private TextView mQuestionTextView;
-    /** Array of Question objects. */
+    /** Array of Question objects. Would be created/stored elsewhere in a more complex project. */
     private Question[] mQuestionBank = new Question[] {
         new Question(R.string.question_oceans, true),
         new Question(R.string.question_mideast, false),
@@ -33,6 +33,11 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        // Get a reference for the TextView and set its text to the question at the current index.
+        mQuestionTextView = (TextView) findViewById(R.id.question_text_view); // TextView reference.
+        int question = mQuestionBank[mCurrentIndex].getTextResId(); // Question at current index.
+        mQuestionTextView.setText(question); // Load TextView reference with current question.
 
         mTrueButton = (Button) findViewById(R.id.true_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
