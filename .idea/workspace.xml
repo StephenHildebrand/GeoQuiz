@@ -35,20 +35,22 @@
       <file leaf-file-name="QuizActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4568462">
-              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.5814406">
+              <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
               <folding>
                 <element signature="e#765#789#0" expanded="true" />
                 <element signature="e#819#844#0" expanded="true" />
                 <element signature="e#875#899#0" expanded="true" />
                 <element signature="e#930#956#0" expanded="true" />
                 <element signature="e#986#1008#0" expanded="true" />
-                <element signature="e#1771#1991#0" expanded="true" />
-                <element signature="e#1914#1938#0" expanded="true" />
-                <element signature="e#1990#1991#0" expanded="true" />
-                <element signature="e#2100#2318#0" expanded="true" />
-                <element signature="e#2243#2265#0" expanded="true" />
-                <element signature="e#2317#2318#0" expanded="true" />
+                <element signature="e#1604#1824#0" expanded="true" />
+                <element signature="e#1747#1771#0" expanded="true" />
+                <element signature="e#1823#1824#0" expanded="true" />
+                <element signature="e#1933#2151#0" expanded="true" />
+                <element signature="e#2076#2098#0" expanded="true" />
+                <element signature="e#2150#2151#0" expanded="true" />
+                <element signature="e#2392#2683#0" expanded="true" />
+                <element signature="e#2682#2683#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1695,8 +1697,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1205" />
-    <option name="width" value="1801" />
+    <option name="x" value="1186" />
+    <option name="width" value="1820" />
     <option name="height" value="1931" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -1796,6 +1798,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="device.picker.selection" value="5VT7N15A24001056" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2074,7 +2077,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1205" y="0" width="1801" height="1931" extended-state="0" />
+    <frame x="1186" y="0" width="1820" height="1931" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2133,12 +2136,14 @@
             <element signature="e#875#899#0" expanded="true" />
             <element signature="e#930#956#0" expanded="true" />
             <element signature="e#986#1008#0" expanded="true" />
-            <element signature="e#1771#1991#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2100#2318#0" expanded="true" />
-            <element signature="e#2243#2265#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
+            <element signature="e#1604#1824#0" expanded="true" />
+            <element signature="e#1747#1771#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="e#1933#2151#0" expanded="true" />
+            <element signature="e#2076#2098#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#2392#2683#0" expanded="true" />
+            <element signature="e#2682#2683#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2180,12 +2185,14 @@
             <element signature="e#875#899#0" expanded="true" />
             <element signature="e#930#956#0" expanded="true" />
             <element signature="e#986#1008#0" expanded="true" />
-            <element signature="e#1771#1991#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2100#2318#0" expanded="true" />
-            <element signature="e#2243#2265#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
+            <element signature="e#1604#1824#0" expanded="true" />
+            <element signature="e#1747#1771#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="e#1933#2151#0" expanded="true" />
+            <element signature="e#2076#2098#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#2392#2683#0" expanded="true" />
+            <element signature="e#2682#2683#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2246,20 +2253,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4568462">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.5814406">
+          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
           <folding>
             <element signature="e#765#789#0" expanded="true" />
             <element signature="e#819#844#0" expanded="true" />
             <element signature="e#875#899#0" expanded="true" />
             <element signature="e#930#956#0" expanded="true" />
             <element signature="e#986#1008#0" expanded="true" />
-            <element signature="e#1771#1991#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2100#2318#0" expanded="true" />
-            <element signature="e#2243#2265#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
+            <element signature="e#1604#1824#0" expanded="true" />
+            <element signature="e#1747#1771#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="e#1933#2151#0" expanded="true" />
+            <element signature="e#2076#2098#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#2392#2683#0" expanded="true" />
+            <element signature="e#2682#2683#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -36,8 +36,7 @@ public class QuizActivity extends AppCompatActivity {
 
         // Get a reference for the TextView and set its text to the question at the current index.
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view); // TextView reference.
-        int question = mQuestionBank[mCurrentIndex].getTextResId(); // Question at current index.
-        mQuestionTextView.setText(question); // Load TextView reference with current question.
+        updateQuestion();
 
         mTrueButton = (Button) findViewById(R.id.true_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +53,30 @@ public class QuizActivity extends AppCompatActivity {
                 Toast.makeText(QuizActivity.this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
             }
         });
+
+        // Get a reference to the Next button.
+        mNextButton = (Button) findViewById(R.id.next_button);
+
+        // Set a listener on it to increment the index and update the TextView's text.
+        mNextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Point the current index to the next Question.
+                mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
+                updateQuestion();
+            }
+        });
+        updateQuestion();
     }
+
+    /** Update the current Question in the TextView to the Question at current index. */
+    private void updateQuestion() {
+        int question = mQuestionBank[mCurrentIndex].getTextResId();
+        mQuestionTextView.setText(question);
+    }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
