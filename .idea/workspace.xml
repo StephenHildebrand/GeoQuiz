@@ -13,6 +13,8 @@
     <list default="true" id="640d794d-e39a-4a52-8b6d-377e3ac3eed4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <ignored path="GeoQuiz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,27 +35,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="QuizActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuizActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62913316">
-              <caret line="74" column="64" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
               <folding>
-                <element signature="e#765#789#0" expanded="true" />
-                <element signature="e#819#844#0" expanded="true" />
-                <element signature="e#875#899#0" expanded="true" />
-                <element signature="e#930#956#0" expanded="true" />
-                <element signature="e#986#1008#0" expanded="true" />
-                <element signature="e#1604#1755#0" expanded="true" />
-                <element signature="e#1754#1755#0" expanded="true" />
-                <element signature="e#1864#2016#0" expanded="true" />
-                <element signature="e#2015#2016#0" expanded="true" />
-                <element signature="e#2257#2548#0" expanded="true" />
-                <element signature="e#2547#2548#0" expanded="true" />
-                <element signature="e#2767#3058#0" expanded="true" />
-                <element signature="e#3057#3058#0" expanded="true" />
-                <element signature="e#4047#4069#0" expanded="true" />
-                <element signature="e#4115#4139#0" expanded="true" />
+                <element signature="e#829#853#0" expanded="true" />
+                <element signature="e#883#908#0" expanded="true" />
+                <element signature="e#939#963#0" expanded="true" />
+                <element signature="e#994#1020#0" expanded="true" />
+                <element signature="e#1050#1072#0" expanded="true" />
+                <element signature="e#1668#1819#0" expanded="true" />
+                <element signature="e#1818#1819#0" expanded="true" />
+                <element signature="e#1928#2080#0" expanded="true" />
+                <element signature="e#2079#2080#0" expanded="true" />
+                <element signature="e#2320#2611#0" expanded="true" />
+                <element signature="e#2610#2611#0" expanded="true" />
+                <element signature="e#2830#3121#0" expanded="true" />
+                <element signature="e#3120#3121#0" expanded="true" />
+                <element signature="e#3365#3660#0" expanded="true" />
+                <element signature="e#3659#3660#0" expanded="true" />
+                <element signature="e#4698#4720#0" expanded="true" />
+                <element signature="e#4766#4790#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,16 +75,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_quiz.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity_quiz.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.186047">
-              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.50435627">
+              <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
               <folding>
-                <element signature="e#1191#1212#0" expanded="true" />
+                <element signature="e#777#798#0" expanded="true" />
+                <element signature="e#996#1018#0" expanded="true" />
+                <element signature="e#1389#1410#0" expanded="true" />
+                <element signature="e#1705#1726#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,8 +96,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state vertical-scroll-proportion="-14.829268">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1698,8 +1705,8 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/Question.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" />
       </list>
     </option>
   </component>
@@ -2389,21 +2396,23 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
-            <element signature="e#765#789#0" expanded="true" />
-            <element signature="e#819#844#0" expanded="true" />
-            <element signature="e#875#899#0" expanded="true" />
-            <element signature="e#930#956#0" expanded="true" />
-            <element signature="e#986#1008#0" expanded="true" />
-            <element signature="e#1604#1755#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1864#2016#0" expanded="true" />
-            <element signature="e#2015#2016#0" expanded="true" />
-            <element signature="e#2257#2548#0" expanded="true" />
-            <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#2767#3058#0" expanded="true" />
-            <element signature="e#3057#3058#0" expanded="true" />
-            <element signature="e#4047#4069#0" expanded="true" />
-            <element signature="e#4115#4139#0" expanded="true" />
+            <element signature="e#829#853#0" expanded="true" />
+            <element signature="e#883#908#0" expanded="true" />
+            <element signature="e#939#963#0" expanded="true" />
+            <element signature="e#994#1020#0" expanded="true" />
+            <element signature="e#1050#1072#0" expanded="true" />
+            <element signature="e#1668#1819#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1928#2080#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2320#2611#0" expanded="true" />
+            <element signature="e#2610#2611#0" expanded="true" />
+            <element signature="e#2830#3121#0" expanded="true" />
+            <element signature="e#3120#3121#0" expanded="true" />
+            <element signature="e#3365#3660#0" expanded="true" />
+            <element signature="e#3659#3660#0" expanded="true" />
+            <element signature="e#4698#4720#0" expanded="true" />
+            <element signature="e#4766#4790#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2426,7 +2435,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <element signature="e#1191#1212#0" expanded="true" />
+            <element signature="e#777#798#0" expanded="true" />
+            <element signature="e#996#1018#0" expanded="true" />
+            <element signature="e#1389#1410#0" expanded="true" />
+            <element signature="e#1705#1726#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2444,21 +2456,23 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
-            <element signature="e#765#789#0" expanded="true" />
-            <element signature="e#819#844#0" expanded="true" />
-            <element signature="e#875#899#0" expanded="true" />
-            <element signature="e#930#956#0" expanded="true" />
-            <element signature="e#986#1008#0" expanded="true" />
-            <element signature="e#1604#1755#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1864#2016#0" expanded="true" />
-            <element signature="e#2015#2016#0" expanded="true" />
-            <element signature="e#2257#2548#0" expanded="true" />
-            <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#2767#3058#0" expanded="true" />
-            <element signature="e#3057#3058#0" expanded="true" />
-            <element signature="e#4047#4069#0" expanded="true" />
-            <element signature="e#4115#4139#0" expanded="true" />
+            <element signature="e#829#853#0" expanded="true" />
+            <element signature="e#883#908#0" expanded="true" />
+            <element signature="e#939#963#0" expanded="true" />
+            <element signature="e#994#1020#0" expanded="true" />
+            <element signature="e#1050#1072#0" expanded="true" />
+            <element signature="e#1668#1819#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1928#2080#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2320#2611#0" expanded="true" />
+            <element signature="e#2610#2611#0" expanded="true" />
+            <element signature="e#2830#3121#0" expanded="true" />
+            <element signature="e#3120#3121#0" expanded="true" />
+            <element signature="e#3365#3660#0" expanded="true" />
+            <element signature="e#3659#3660#0" expanded="true" />
+            <element signature="e#4698#4720#0" expanded="true" />
+            <element signature="e#4766#4790#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2481,7 +2495,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <element signature="e#1191#1212#0" expanded="true" />
+            <element signature="e#777#798#0" expanded="true" />
+            <element signature="e#996#1018#0" expanded="true" />
+            <element signature="e#1389#1410#0" expanded="true" />
+            <element signature="e#1705#1726#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2496,21 +2513,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state vertical-scroll-proportion="-14.829268">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.186047">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
           <folding>
-            <element signature="e#1191#1212#0" expanded="true" />
+            <element signature="e#829#853#0" expanded="true" />
+            <element signature="e#883#908#0" expanded="true" />
+            <element signature="e#939#963#0" expanded="true" />
+            <element signature="e#994#1020#0" expanded="true" />
+            <element signature="e#1050#1072#0" expanded="true" />
+            <element signature="e#1668#1819#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1928#2080#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2320#2611#0" expanded="true" />
+            <element signature="e#2610#2611#0" expanded="true" />
+            <element signature="e#2830#3121#0" expanded="true" />
+            <element signature="e#3120#3121#0" expanded="true" />
+            <element signature="e#3365#3660#0" expanded="true" />
+            <element signature="e#3659#3660#0" expanded="true" />
+            <element signature="e#4698#4720#0" expanded="true" />
+            <element signature="e#4766#4790#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2525,26 +2555,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62913316">
-          <caret line="74" column="64" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.50435627">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
           <folding>
-            <element signature="e#765#789#0" expanded="true" />
-            <element signature="e#819#844#0" expanded="true" />
-            <element signature="e#875#899#0" expanded="true" />
-            <element signature="e#930#956#0" expanded="true" />
-            <element signature="e#986#1008#0" expanded="true" />
-            <element signature="e#1604#1755#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1864#2016#0" expanded="true" />
-            <element signature="e#2015#2016#0" expanded="true" />
-            <element signature="e#2257#2548#0" expanded="true" />
-            <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#2767#3058#0" expanded="true" />
-            <element signature="e#3057#3058#0" expanded="true" />
-            <element signature="e#4047#4069#0" expanded="true" />
-            <element signature="e#4115#4139#0" expanded="true" />
+            <element signature="e#777#798#0" expanded="true" />
+            <element signature="e#996#1018#0" expanded="true" />
+            <element signature="e#1389#1410#0" expanded="true" />
+            <element signature="e#1705#1726#0" expanded="true" />
           </folding>
         </state>
       </provider>

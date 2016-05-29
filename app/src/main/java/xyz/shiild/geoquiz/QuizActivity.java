@@ -16,6 +16,8 @@ public class QuizActivity extends AppCompatActivity {
     private Button mFalseButton;
     /** The Next button. */
     private Button mNextButton;
+    /** The Previous button. */
+    private Button mPrevButton;
     /** The Question text view. */
     private TextView mQuestionTextView;
     /** Array of Question objects. Would be created/stored elsewhere in a more complex project. */
@@ -56,7 +58,6 @@ public class QuizActivity extends AppCompatActivity {
 
         // Get a reference to the Next button.
         mNextButton = (Button) findViewById(R.id.next_button);
-
         // Set a listener on it to increment the index and update the TextView's text.
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +78,19 @@ public class QuizActivity extends AppCompatActivity {
                 updateQuestion();
             }
         });
+
+        // Get a reference to the Previous button.
+        mPrevButton = (Button) findViewById(R.id.prev_button);
+        // Set a listener on it to decrement the index and update the TextView's text.
+        mPrevButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Point the current index to the previous question.
+                mCurrentIndex = (mCurrentIndex - 1) % mQuestionBank.length;
+                updateQuestion();
+            }
+        });
+        // Update this Question to the next one.
         updateQuestion();
     }
 
