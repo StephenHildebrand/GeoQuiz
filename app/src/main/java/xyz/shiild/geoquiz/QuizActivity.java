@@ -66,6 +66,17 @@ public class QuizActivity extends AppCompatActivity {
                 updateQuestion();
             }
         });
+
+        // Set a listener for the Question TextView as well such that clicking it will also
+        // proceed to the next question (just like clicking the next Button).
+        mQuestionTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Point the current index to the next Question.
+                mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
+                updateQuestion();
+            }
+        });
         updateQuestion();
     }
 

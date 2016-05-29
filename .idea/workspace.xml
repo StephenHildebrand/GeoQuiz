@@ -6,13 +6,13 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="WARN" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="640d794d-e39a-4a52-8b6d-377e3ac3eed4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java" />
     </list>
     <ignored path="GeoQuiz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,24 +33,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="QuizActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QuizActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.62913316">
+              <caret line="74" column="64" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
               <folding>
                 <element signature="e#765#789#0" expanded="true" />
                 <element signature="e#819#844#0" expanded="true" />
                 <element signature="e#875#899#0" expanded="true" />
                 <element signature="e#930#956#0" expanded="true" />
                 <element signature="e#986#1008#0" expanded="true" />
+                <element signature="e#1604#1755#0" expanded="true" />
                 <element signature="e#1754#1755#0" expanded="true" />
                 <element signature="e#1864#2016#0" expanded="true" />
                 <element signature="e#2015#2016#0" expanded="true" />
                 <element signature="e#2257#2548#0" expanded="true" />
                 <element signature="e#2547#2548#0" expanded="true" />
-                <element signature="e#3537#3559#0" expanded="true" />
-                <element signature="e#3605#3629#0" expanded="true" />
+                <element signature="e#2767#3058#0" expanded="true" />
+                <element signature="e#3057#3058#0" expanded="true" />
+                <element signature="e#4047#4069#0" expanded="true" />
+                <element signature="e#4115#4139#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,19 +64,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-              <folding />
+              <folding>
+                <element signature="e#308#309#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_quiz.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_quiz.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6195547">
-              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            <state vertical-scroll-proportion="-8.186047">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
               <folding>
                 <element signature="e#1191#1212#0" expanded="true" />
               </folding>
@@ -1693,15 +1698,15 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/Question.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1147" />
+    <option name="x" value="1162" />
     <option name="y" value="22" />
-    <option name="width" value="1863" />
+    <option name="width" value="1848" />
     <option name="height" value="1865" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -2330,7 +2335,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1147" y="22" width="1863" height="1865" extended-state="0" />
+    <frame x="1162" y="22" width="1848" height="1865" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2348,7 +2353,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2572899" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2572899" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2389,13 +2394,16 @@
             <element signature="e#875#899#0" expanded="true" />
             <element signature="e#930#956#0" expanded="true" />
             <element signature="e#986#1008#0" expanded="true" />
+            <element signature="e#1604#1755#0" expanded="true" />
             <element signature="e#1754#1755#0" expanded="true" />
             <element signature="e#1864#2016#0" expanded="true" />
             <element signature="e#2015#2016#0" expanded="true" />
             <element signature="e#2257#2548#0" expanded="true" />
             <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#3537#3559#0" expanded="true" />
-            <element signature="e#3605#3629#0" expanded="true" />
+            <element signature="e#2767#3058#0" expanded="true" />
+            <element signature="e#3057#3058#0" expanded="true" />
+            <element signature="e#4047#4069#0" expanded="true" />
+            <element signature="e#4115#4139#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2404,7 +2412,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2439,13 +2449,16 @@
             <element signature="e#875#899#0" expanded="true" />
             <element signature="e#930#956#0" expanded="true" />
             <element signature="e#986#1008#0" expanded="true" />
+            <element signature="e#1604#1755#0" expanded="true" />
             <element signature="e#1754#1755#0" expanded="true" />
             <element signature="e#1864#2016#0" expanded="true" />
             <element signature="e#2015#2016#0" expanded="true" />
             <element signature="e#2257#2548#0" expanded="true" />
             <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#3537#3559#0" expanded="true" />
-            <element signature="e#3605#3629#0" expanded="true" />
+            <element signature="e#2767#3058#0" expanded="true" />
+            <element signature="e#3057#3058#0" expanded="true" />
+            <element signature="e#4047#4069#0" expanded="true" />
+            <element signature="e#4115#4139#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2454,7 +2467,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2479,14 +2494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
@@ -2495,36 +2502,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.186047">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <folding>
+            <element signature="e#1191#1212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/Question.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/xyz/shiild/geoquiz/QuizActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62913316">
+          <caret line="74" column="64" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
           <folding>
             <element signature="e#765#789#0" expanded="true" />
             <element signature="e#819#844#0" expanded="true" />
             <element signature="e#875#899#0" expanded="true" />
             <element signature="e#930#956#0" expanded="true" />
             <element signature="e#986#1008#0" expanded="true" />
+            <element signature="e#1604#1755#0" expanded="true" />
             <element signature="e#1754#1755#0" expanded="true" />
             <element signature="e#1864#2016#0" expanded="true" />
             <element signature="e#2015#2016#0" expanded="true" />
             <element signature="e#2257#2548#0" expanded="true" />
             <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#3537#3559#0" expanded="true" />
-            <element signature="e#3605#3629#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6195547">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding>
-            <element signature="e#1191#1212#0" expanded="true" />
+            <element signature="e#2767#3058#0" expanded="true" />
+            <element signature="e#3057#3058#0" expanded="true" />
+            <element signature="e#4047#4069#0" expanded="true" />
+            <element signature="e#4115#4139#0" expanded="true" />
           </folding>
         </state>
       </provider>
