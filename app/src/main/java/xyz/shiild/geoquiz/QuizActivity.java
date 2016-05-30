@@ -2,6 +2,7 @@ package xyz.shiild.geoquiz;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,10 +32,13 @@ public class QuizActivity extends AppCompatActivity {
     };
     /** Index for the array of question objects. */
     private int mCurrentIndex = 0;
+    /** Tag constant for the class name */
+    private static final String TAG = "QuizActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_quiz);
 
         // Get a reference for the TextView and set its text to the question at the current index.
@@ -43,6 +47,7 @@ public class QuizActivity extends AppCompatActivity {
 
         mTrueButton = (Button) findViewById(R.id.true_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 checkAnswer(true);
@@ -121,6 +126,35 @@ public class QuizActivity extends AppCompatActivity {
         Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart() called");
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause() called");
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume() called");
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop() called");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy() called");
+    }
 
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
