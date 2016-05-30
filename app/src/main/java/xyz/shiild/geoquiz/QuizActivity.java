@@ -12,16 +12,22 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class QuizActivity extends AppCompatActivity {
+
     /** The True button. */
     private Button mTrueButton;
+
     /** The False button. */
     private Button mFalseButton;
+
     /** The Next button. */
     private ImageButton mNextButton;
+
     /** The Previous button. */
     private ImageButton mPrevButton;
+
     /** The Question text view. */
     private TextView mQuestionTextView;
+
     /** Array of Question objects. Would be created/stored elsewhere in a more complex project. */
     private Question[] mQuestionBank = new Question[] {
         new Question(R.string.question_oceans, true),
@@ -30,8 +36,10 @@ public class QuizActivity extends AppCompatActivity {
         new Question(R.string.question_americas, true),
         new Question(R.string.question_asia, true)
     };
+
     /** Index for the array of question objects. */
     private int mCurrentIndex = 0;
+
     /** Tag constant for the class name */
     private static final String TAG = "QuizActivity";
 
@@ -156,18 +164,18 @@ public class QuizActivity extends AppCompatActivity {
         Log.d(TAG, "onDestroy() called");
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.quiz, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        int id = item.getItemId();
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_quiz, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
