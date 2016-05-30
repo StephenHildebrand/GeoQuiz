@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 public class QuizActivity extends AppCompatActivity {
 
+    /********** Fields **********/
+
     /** The True button. */
     private Button mTrueButton;
 
@@ -40,8 +42,14 @@ public class QuizActivity extends AppCompatActivity {
     /** Index for the array of question objects. */
     private int mCurrentIndex = 0;
 
-    /** Tag constant for the class name */
+    /** Tag constant for the class name. */
     private static final String TAG = "QuizActivity";
+
+    /** Key for the key-value pair that will be stored in the Bundle. */
+    private static final String KEY_INDEX = "index";
+
+
+    /********** Methods **********/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +112,13 @@ public class QuizActivity extends AppCompatActivity {
                 updateQuestion();
             }
         });
+
+        // If savedInstanceState exists, assign the appropriate saved value to mCurrentIndex.
+        // This ensures the question text remains the same when the screen is rotated.
+        if (savedInstanceState != null) {
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+        }
+
         // Update this Question to the next one.
         updateQuestion();
     }
@@ -177,5 +192,12 @@ public class QuizActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        Log.i(TAG, "onSaveInstanceState");
+        savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
     }
 }

@@ -37,29 +37,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <!--<Button-->
-            <!--android:id="@+id/prev_button"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@string/prev_button"-->
-            <!--android:drawableLeft="@drawable/arrow_left"-->
-            <!--android:drawablePadding="4dp"-->
-            <!--/>-->
-        <!--<Button-->
-            <!--android:id="@+id/next_button"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@string/next_button"-->
-            <!--android:drawableRight="@drawable/arrow_right"-->
-            <!--android:drawablePadding="4dp"-->
-            <!--/>-->
-
-        <!-- Replace previous Prev/Next Buttons with ImageButtons. The content description is
+        <!-- Replaced original Prev/Next Buttons with ImageButtons. The content description is
         required by Android to make ImageButtons accessible to the visually impaired. -->
         <ImageButton
             android:id="@+id/prev_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:src="@drawable/arrow_left"
             android:contentDescription="@string/prev_button"
             />
@@ -67,6 +51,7 @@
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:src="@drawable/arrow_right"
             android:contentDescription="@string/next_button"
             />
