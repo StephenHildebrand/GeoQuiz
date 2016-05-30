@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,9 +16,9 @@ public class QuizActivity extends AppCompatActivity {
     /** The False button. */
     private Button mFalseButton;
     /** The Next button. */
-    private Button mNextButton;
+    private ImageButton mNextButton;
     /** The Previous button. */
-    private Button mPrevButton;
+    private ImageButton mPrevButton;
     /** The Question text view. */
     private TextView mQuestionTextView;
     /** Array of Question objects. Would be created/stored elsewhere in a more complex project. */
@@ -57,7 +58,7 @@ public class QuizActivity extends AppCompatActivity {
         });
 
         // Get a reference to the Next button.
-        mNextButton = (Button) findViewById(R.id.next_button);
+        mNextButton = (ImageButton) findViewById(R.id.next_button);
         // Set a listener on it to increment the index and update the TextView's text.
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,7 +81,7 @@ public class QuizActivity extends AppCompatActivity {
         });
 
         // Get a reference to the Previous button.
-        mPrevButton = (Button) findViewById(R.id.prev_button);
+        mPrevButton = (ImageButton) findViewById(R.id.prev_button);
         // Set a listener on it to decrement the index and update the TextView's text.
         mPrevButton.setOnClickListener(new View.OnClickListener() {
             @Override
