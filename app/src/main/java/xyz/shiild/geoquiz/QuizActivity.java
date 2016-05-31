@@ -24,6 +24,9 @@ public class QuizActivity extends AppCompatActivity {
     /** The Next button. */
     private ImageButton mNextButton;
 
+    /** The Cheat button. */
+    private Button mCheatButton;
+
     /** The Previous button. */
     private ImageButton mPrevButton;
 
@@ -58,7 +61,7 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         // Get a reference for the TextView and set its text to the question at the current index.
-        mQuestionTextView = (TextView) findViewById(R.id.question_text_view); // TextView reference.
+        mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         updateQuestion();
 
         mTrueButton = (Button) findViewById(R.id.true_button);
@@ -110,6 +113,16 @@ public class QuizActivity extends AppCompatActivity {
                 // Point the current index to the previous question.
                 mCurrentIndex = (mCurrentIndex - 1) % mQuestionBank.length;
                 updateQuestion();
+            }
+        });
+
+        // To implement listener the for Cheat button, first get a reference to the Cheat button.
+        mCheatButton = (Button)findViewById(R.id.cheat_button);
+        // Now set a listener on it.
+        mCheatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start CheatActivity.
             }
         });
 
