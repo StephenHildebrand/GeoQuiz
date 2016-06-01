@@ -1,5 +1,6 @@
 package xyz.shiild.geoquiz;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -50,6 +51,9 @@ public class QuizActivity extends AppCompatActivity {
 
     /** Key for the key-value pair that will be stored in the Bundle. */
     private static final String KEY_INDEX = "index";
+
+    /** User-defined key used to track/differentiate multiple activities. */
+    private static final int REQUEST_CODE_CHEAT = 0;
 
 
     /********** Methods **********/
@@ -116,13 +120,19 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-        // To implement listener the for Cheat button, first get a reference to the Cheat button.
+        // To implement the listener for Cheat button, first get a reference to the Cheat button.
         mCheatButton = (Button)findViewById(R.id.cheat_button);
         // Now set a listener on it.
         mCheatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Start CheatActivity.
+                // Store the correct answer in answerIsTrue variable
+                boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
+                // Create an Intent that includes the Activity and the correct answer.
+                Intent i = CheatActivity.newIntent(QuizActivity.this, answerIsTrue);
+                // Pass this intent into startActivityForResult to allow QuizActivity to
+                // "hear back" from the CheatActivity class.
+                startActivityForResult(i, REQUEST_CODE_CHEAT);
             }
         });
 
