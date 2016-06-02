@@ -57,13 +57,14 @@ public class CheatActivity extends AppCompatActivity {
     /**
      * In order to pass some specific data back to QuizActivity, an Intent is created and an
      * extra is put on it. Then Activity.setResult is called to send that data back to parent.
+     * This method is called in the ShowAnswer button's listener in onCreate(...).
      *
      * @param isAnswerShown the data result to send to parent.
      */
     private void setAnswerShownResult(boolean isAnswerShown) {
-        Intent data = new Intent();
-        data.putExtra(EXTRA_ANSWER_SHOWN, isAnswerShown);
-        setResult(RESULT_OK, data);
+        Intent data = new Intent(); // create an Intent
+        data.putExtra(EXTRA_ANSWER_SHOWN, isAnswerShown); // put an extra on it
+        setResult(RESULT_OK, data); // send the result code and intent (data) back to QuizActivity
     }
 
     /**
@@ -78,5 +79,15 @@ public class CheatActivity extends AppCompatActivity {
         Intent i = new Intent(packageContext, CheatActivity.class);
         i.putExtra(EXTRA_ANSWER_IS_TRUE, answerIsTrue);
         return i;
+    }
+
+    /**
+     * Decodes the contents of the result Intent into something usable by other classes,
+     * e.g. QuizActivity.
+     * @param result    the intent containing the result.
+     * @return The result to be decoded.
+     */
+    public static boolean wasAnswerShown(Intent result) {
+        return result.getBooleanExtra(EXTRA_ANSWER_SHOWN, false);
     }
 }
