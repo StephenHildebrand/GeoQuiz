@@ -1,5 +1,6 @@
 package xyz.shiild.geoquiz;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,6 +34,10 @@ public class QuizActivity extends AppCompatActivity {
 
     /** The Question text view. */
     private TextView mQuestionTextView;
+
+    /**
+     * Holds the value that the child, CheatActivity, passes back. */
+    private boolean mIsCheater;
 
     /** Array of Question objects. Would be created/stored elsewhere in a more complex project. */
     private Question[] mQuestionBank = new Question[] {
@@ -219,6 +224,18 @@ public class QuizActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG, "onSaveInstanceState");
         savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode != Activity.RESULT_OK) // Check that resultCode is RESULT_OK.
+            return;
+
+        if (requestCode == REQUEST_CODE_CHEAT) { // Check that
+            if (data == null) // Check that requestCode contains Intent data
+                return;
+            mIsCheater = CheatActivity.wasAnswerShown(data);
+        }
     }
 
 }
