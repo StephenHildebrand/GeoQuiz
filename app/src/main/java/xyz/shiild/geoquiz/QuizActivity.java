@@ -35,8 +35,7 @@ public class QuizActivity extends AppCompatActivity {
     /** The Question text view. */
     private TextView mQuestionTextView;
 
-    /**
-     * Holds the value that the child, CheatActivity, passes back. */
+    /** Holds the value that the child, CheatActivity, passes back. */
     private boolean mIsCheater;
 
     /** Array of Question objects. Would be created/stored elsewhere in a more complex project. */
@@ -98,6 +97,7 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Point the current index to the next Question.
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
+                mIsCheater = false; // Reset cheat variable when moving to next question.
                 updateQuestion();
             }
         });
@@ -164,16 +164,24 @@ public class QuizActivity extends AppCompatActivity {
      * button. Then, it will check the user's answer against the answer in the current Question
      * object. Finally, after determining whether the user answered correctly, it will make a
      * Toast that displays the appropriate message to the user.
+     *
      * @param userPressedTrue   True if user presses the True button, False if the False button.
      */
     private void checkAnswer(boolean userPressedTrue) {
         boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
+
+        // int messageResId = 0;
         int messageResId;
-        if (userPressedTrue == answerIsTrue) {
-            messageResId = R.string.correct_toast;
+
+        if (mIsCheater) { // Check whether user cheated.
+            messageResId = R.string.judgement_toast;
         } else {
-            messageResId = R.string.incorrect_toast;
+            if (userPressedTrue == answerIsTrue)
+                messageResId = R.string.correct_toast;
+            else
+                messageResId = R.string.incorrect_toast;
         }
+
         Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
     }
 
@@ -228,12 +236,14 @@ public class QuizActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode != Activity.RESULT_OK) // Check that resultCode is RESULT_OK.
+        if (resultCode != Activity.RESULT_OK) { // Check that resultCode is RESULT_OK.
             return;
+        }
 
-        if (requestCode == REQUEST_CODE_CHEAT) { // Check that
-            if (data == null) // Check that requestCode contains Intent data
+        if (requestCode == REQUEST_CODE_CHEAT) {
+            if (data == null) { // Check that requestCode contains Intent data
                 return;
+            }
             mIsCheater = CheatActivity.wasAnswerShown(data);
         }
     }

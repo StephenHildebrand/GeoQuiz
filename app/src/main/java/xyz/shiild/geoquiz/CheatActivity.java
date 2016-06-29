@@ -62,9 +62,9 @@ public class CheatActivity extends AppCompatActivity {
      * @param isAnswerShown the data result to send to parent.
      */
     private void setAnswerShownResult(boolean isAnswerShown) {
-        Intent data = new Intent(); // create an Intent
-        data.putExtra(EXTRA_ANSWER_SHOWN, isAnswerShown); // put an extra on it
-        setResult(RESULT_OK, data); // send the result code and intent (data) back to QuizActivity
+        Intent data = new Intent(); // Create an Intent.
+        data.putExtra(EXTRA_ANSWER_SHOWN, isAnswerShown); // Put an extra on it.
+        setResult(RESULT_OK, data); // Send the result code and intent (data) back to QuizActivity.
     }
 
     /**
